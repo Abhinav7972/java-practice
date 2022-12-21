@@ -1,4 +1,17 @@
 
+public class absclass 
+{
+
+ public static void main(String [] args)
+ {
+car c = new car();
+bike b = new bike();
+c.ignition();
+b.ignition();
+
+ }    
+}
+
 abstract class engine
 {
  abstract void ignition();
@@ -13,6 +26,7 @@ class car extends engine
 
 }
 
+
 class bike extends engine
 {
     void ignition()
@@ -20,18 +34,4 @@ class bike extends engine
        System.out.println("bike engine is starting");
     }
 
-}
-
-
-public class absclass 
-{
-
- public static void main(String [] args)
- {
-car c = new car();
-bike b = new bike();
-c.ignition();
-b.ignition();
-
- }    
 }
