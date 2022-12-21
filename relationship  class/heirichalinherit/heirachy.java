@@ -6,7 +6,7 @@ class bank {
     int ifsc_no;
     String branch_name;
     int balance;
-    String bank_country = "INDIA";
+ static  String bank_country = "INDIA";
     int bank_name() {
         System.out.println("welcome to bank");
         return 0;
@@ -31,15 +31,17 @@ class admin_account extends bank {
           
     {
         Scanner b = new Scanner(System.in);
-        System.out.print("enter your branch name :");
+        System.out.print("enter your branch name :" + "");
         branch_name = b.nextLine();
         System.out.println("your branch details are updated");
+        System.out.println(""+"");
         bu = branch_name;
         return 0;
     }
 
     int disp_info()
     {
+        System.out.println("user information as follows :" +"");
         System.out.println("user account number is :" + au);
         System.out.println("user branch details is :" + bu);
         return 0;
@@ -62,13 +64,15 @@ admin_account ad = new admin_account();
 
 }
 
-public class heirachy {
+public class heirachy extends bank {
 
     public static void main(String[] args) 
     {
       
       user_account u = new user_account();
       u.bank_name();
+      System.out.println("our bank located at :" + bank_country);
+      System.out.println(""+ "");
       u.display_user_info();
     }
 }
