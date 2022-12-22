@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class heirachy extends bank {
+public class heirachy extends bank { //main class
 
     public static void main(String[] args) 
     {
@@ -13,7 +13,7 @@ public class heirachy extends bank {
     }
 }
 
-class bank {
+class bank {   //super base class
     static  String bank_country = "INDIA";
     int ac_no;
     int department_details;
@@ -27,7 +27,7 @@ class bank {
 
 }
 
-class admin_account extends bank {
+class admin_account extends bank {  //subclass
     int au;
     String bu;
     int ac_update() {
@@ -62,7 +62,7 @@ class admin_account extends bank {
 
 }
 
-class user_account extends bank
+class user_account extends bank  //sub class
 {
 
 admin_account ad = new admin_account();        
