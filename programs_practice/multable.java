@@ -2,13 +2,17 @@
         
 public class multable 
 {
+    
     public static void main(String[] args)
      {
       for(int i = 1;i<=10;i++)
       {
-        
-            System.out.printf("%10s \n \t \t ",i*2);
+        for( int j = 1 ; j<=10;j++)
+        {
+        System.out.printf("%6d ",i*j);
+        }
 
+      System.out.println();
       }  
     }
 
